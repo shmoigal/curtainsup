@@ -1,0 +1,15 @@
+{
+  "year": "2026/2027",
+  "days": ["Monday", "Tuesday", "Wednesday"],
+  "rows": [
+    { "month": "September 2026", "dates": ["7th", "8th", "9th"], "note": "Start of Term 1." },
+    { "month": "October", "dates": ["26th", "27th", "28th"], "note": "Mid-term break. No Classes" },
+    { "month": "December", "dates": ["7th", "8th", "9th"], "note": "End of Term 1. Last class before Xmas." },
+    { "month": "January 2027", "dates": ["11th", "12th", "13th"], "note": "Start of Term 2 (provisional)" }
+  ],
+  "firhouse": {
+    "heading": "Firhouse ETNS, Term 1:",
+    "dates": "Tuesdays, 8th September – 20th October",
+    "note": "See FETNS Afterschool activity timetable."
+  }
+}

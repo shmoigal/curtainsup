@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Knocklyon",
+    "venue": "Knocklyon Community Centre",
+    "note": "",
+    "days": [
+      {
+        "day": "Monday",
+        "slots": [
+          ["1:30 – 2:30", "Junior & Senior Infants"],
+          ["2:30 – 3:30", "1st – 3rd Class"],
+          ["3:30 – 4:30", "4th – 6th Class"],
+          ["4:30 – 5:30", "Teens (1st – 4th Year)"],
+          ["5:30 – 6:30", "Teens (1st – 4th Year)"]
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "slots": [["4:30 – 5:30", "Teens (17+)"]]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          ["1:30 – 2:30", "Junior & Senior Infants"],
+          ["2:30 – 3:30", "4th – 6th Class"],
+          ["3:30 – 4:30", "1st – 3rd Class"]
+        ]
+      }
+    ],
+    "location": {
+      "heading": "Monday, Tuesday & Wednesday Classes",
+      "address": "Knocklyon Community Centre, Idrone Avenue, Knocklyon, Dublin 16",
+      "lat": 53.2833012,
+      "lon": -6.31702905,
+      "mapsUrl": "https://maps.app.goo.gl/dxN3u9xknJWR9i7G7"
+    }
+  },
+  {
+    "name": "Firhouse",
+    "venue": "Educate Together National School",
+    "note": "(FETNS Students only)",
+    "days": [
+      {
+        "day": "Tuesday",
+        "slots": [
+          ["1:05 – 2:05", "Junior & Senior Infants"],
+          ["2:05 – 3:05", "1st to 6th Class"]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tallaght",
+    "venue": "Scoil Aonghusa Senior & St. Rose’s National School",
+    "note": "(Scoil Aonghusa & St. Rose’s Students only)",
+    "days": [
+      {
+        "day": "Wednesday & Thursday",
+        "when": "During School hours"
+      }
+    ],
+    "location": {
+      "heading": "Thursday Classes",
+      "address": "Scoil Aonghusa Senior, Balrothery, Tallaght, Dublin 24",
+      "lat": 53.293063480409,
+      "lon": -6.3444060087204,
+      "mapsUrl": "https://goo.gl/maps/Mwc27eKCoWekbmACA"
+    }
+  }
+]

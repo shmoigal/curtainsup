@@ -1,0 +1,14 @@
+---
+title: Location
+---
+{% for venue in venues %}{% if venue.location %}
+{% set loc = venue.location %}
+{% if not loop.first %}<hr>{% endif %}
+<section class="venue">
+  <h2>{{ loc.heading }}</h2>
+  <p><strong>Address:</strong> {{ loc.address }}</p>
+  <iframe class="map" title="Map of {{ venue.venue }}" loading="lazy"
+    src="https://www.openstreetmap.org/export/embed.html?bbox={{ loc.lon - 0.004 }}%2C{{ loc.lat - 0.0025 }}%2C{{ loc.lon + 0.004 }}%2C{{ loc.lat + 0.0025 }}&amp;layer=mapnik&amp;marker={{ loc.lat }}%2C{{ loc.lon }}"></iframe>
+  <p><a href="{{ loc.mapsUrl }}" target="_blank" rel="noopener noreferrer">Open in Maps</a></p>
+</section>
+{% endif %}{% endfor %}

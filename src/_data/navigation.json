@@ -1,0 +1,33 @@
+[
+  { "title": "Home", "url": "/" },
+  { "title": "Class Times & Locations", "url": "/class-times-and-fees/" },
+  { "title": "Calendar", "url": "/calendar/" },
+  { "title": "Book Online", "url": "/booking/" },
+  { "title": "Enquiries", "url": "/contact/" },
+  {
+    "title": "Gallery",
+    "url": "/gallery/",
+    "children": [
+      { "title": "IBSD Exams 2021", "url": "/ibsd-exams-2021/" },
+      {
+        "title": "Outdoor Classes 2021",
+        "url": "/outdoor-classes-2021/",
+        "children": [
+          { "title": "Monday Juniors", "url": "/monday-juniors/" },
+          { "title": "Monday Seniors", "url": "/monday-seniors/" },
+          { "title": "Tuesday Juniors", "url": "/tuesday-juniors/" },
+          { "title": "Tuesday Seniors", "url": "/tuesday-seniors/" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "About",
+    "url": "/sarah-jayne-quigley/",
+    "children": [
+      { "title": "Teacher's Biog", "url": "/sarah-jayne-quigley/" },
+      { "title": "Location", "url": "/location/" },
+      { "title": "Useful Links", "url": "/useful-links/" }
+    ]
+  }
+]

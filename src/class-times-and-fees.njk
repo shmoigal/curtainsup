@@ -1,0 +1,31 @@
+---
+title: Class Times & Locations
+---
+<p>All Speech &amp; Drama classes are open to children from 4 years up.</p>
+
+{% for venue in venues %}
+<hr>
+<section class="venue">
+  <h2 class="venue-name">{{ venue.name | upper }}</h2>
+  <p class="venue-detail">{{ venue.venue }}{% if venue.note %}<br><em>{{ venue.note }}</em>{% endif %}</p>
+  {% for day in venue.days %}
+  <div class="day">
+    <h3>{{ day.day }}</h3>
+    {% if day.when %}<p><em>{{ day.when }}</em></p>{% endif %}
+    {% if day.slots %}
+    <ul class="slots">
+      {% for slot in day.slots %}
+      <li><span class="time">{{ slot[0] }}</span> {{ slot[1] }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+{% endfor %}
+<hr>
+
+<p>Places are strictly limited and will be allocated on a first come, first served basis.</p>
+<p>Early booking is therefore advised.</p>
+<p>A small exam fee will apply to pupils who wish to take Irish Board of Speech &amp; Drama examinations. This fee will be due in October.</p>
+<p><em>Please Note: It is highly recommended that students take these exams.</em></p>

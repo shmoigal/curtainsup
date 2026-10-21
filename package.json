@@ -1,0 +1,25 @@
+{
+  "name": "curtainsup",
+  "version": "1.0.0",
+  "description": "Curtain's Up Drama School website",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shmoigal/curtainsup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/shmoigal/curtainsup/issues"
+  },
+  "homepage": "https://github.com/shmoigal/curtainsup#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7"
+  }
+}

@@ -1,0 +1,16 @@
+{% macro items(list, current) %}
+<ul>
+  {% for item in list %}
+  <li{% if item.children %} class="has-children"{% endif %}>
+    <a href="{{ item.url }}"{% if item.url == current %} aria-current="page"{% endif %}>{{ item.title }}</a>
+    {% if item.children %}{{ items(item.children, current) }}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+<nav class="main-nav" aria-label="Top Menu">
+  <button class="menu-toggle" type="button" aria-controls="top-menu" aria-expanded="false">Menu</button>
+  <div id="top-menu" class="menu">
+    {{ items(navigation, page.url) }}
+  </div>
+</nav>

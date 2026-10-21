@@ -1,0 +1,29 @@
+---
+eleventyComputed:
+  title: "Calendar {{ calendar.year }}"
+---
+<table class="calendar">
+  <thead>
+    <tr>
+      <th scope="col">Month</th>
+      {% for day in calendar.days %}<th scope="col">{{ day }}</th>{% endfor %}
+      <th scope="col"><span class="visually-hidden">Notes</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in calendar.rows %}
+    <tr>
+      <th scope="row">{{ row.month }}</th>
+      {% for date in row.dates %}<td>{{ date }}</td>{% endfor %}
+      <td>{{ row.note }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% if calendar.firhouse %}
+<div class="notice">
+  <p><strong>{{ calendar.firhouse.heading }}</strong></p>
+  <p><strong>{{ calendar.firhouse.dates }}</strong>.<br>{{ calendar.firhouse.note }}</p>
+</div>
+{% endif %}

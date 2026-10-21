@@ -64,7 +64,7 @@ th:last-child, td:last-child { padding-right: 0; }
 
 /* Header and navigation */
 .site-header { background: #ededed; }
-.site-branding { padding: 2em 0; }
+.site-branding { padding: 2em 0; text-align: center; }
 .logo-link { display: inline-block; vertical-align: middle; }
 .logo-link img { display: inline-block; max-height: 200px; width: auto; }
 
@@ -104,12 +104,11 @@ th:last-child, td:last-child { padding-right: 0; }
 
   .main-nav { font-size: 0.875rem; }
   .main-nav .wrap { padding: 0.75em 3.4167em; }
-  .main-nav .menu { margin-left: -1.25em; }
   .js .menu-toggle { display: none; }
   .js .main-nav .menu { display: block; }
 
   .main-nav ul { background: transparent; padding: 0; }
-  .main-nav .menu > ul { border: 0; padding: 0; }
+  .main-nav .menu > ul { border: 0; padding: 0; text-align: center; }
   .main-nav li { border: 0; display: inline-block; }
   .main-nav li li { display: block; }
   .main-nav a { padding: 1em 1.25em; }
@@ -126,7 +125,6 @@ th:last-child, td:last-child { padding-right: 0; }
 
 @media (min-width: 67em) {
   .main-nav .wrap { padding: 0.75em 2em; }
-  .main-nav .menu { margin-left: 0; }
 }
 
 /* Content */

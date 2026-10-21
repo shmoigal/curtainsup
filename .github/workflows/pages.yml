@@ -25,6 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # Use "/" once the custom domain is serving the site.
+          PATH_PREFIX: /curtainsup/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

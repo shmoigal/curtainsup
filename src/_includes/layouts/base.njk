@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if title and not isHome %}{{ title }} – {% endif %}{{ site.name }}</title>
   <meta name="description" content="{{ description or 'Curtain’s Up is a dedicated Speech & Drama School in Knocklyon, Firhouse & Tallaght, Dublin.' }}">
-  <link rel="icon" href="/assets/images/favicon.png">
+  <link rel="icon" href="{{ '/assets/images/favicon.png' | url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;800&display=swap">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <script src="/assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  <script src="{{ '/assets/js/main.js' | url }}" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>

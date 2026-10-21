@@ -9,7 +9,7 @@ layout: layouts/base.njk
     {% if children %}
     <ul>
       {% for child in children %}
-      <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+      <li><a href="{{ child.url | url }}">{{ child.title }}</a></li>
       {% endfor %}
     </ul>
     {% endif %}

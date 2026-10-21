@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="branding">
-    <a href="/" class="logo-link" aria-label="{{ site.name }} – home">
-      <img src="/assets/images/logo.png" width="472" height="250" alt="{{ site.name }}">
+    <a href="{{ '/' | url }}" class="logo-link" aria-label="{{ site.name }} – home">
+      <img src="{{ '/assets/images/logo.png' | url }}" width="472" height="250" alt="{{ site.name }}">
     </a>
   </div>
   {% include "partials/nav.njk" %}

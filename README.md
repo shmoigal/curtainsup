@@ -27,7 +27,7 @@ The footer year updates automatically at build time.
 ## Deployment
 
 1. In the GitHub repo, set **Settings > Pages > Source** to **GitHub Actions**.
-2. `src/CNAME` sets the custom domain to `www.curtainsup.ie`. Point DNS at GitHub Pages (CNAME `www` to `shmoigal.github.io`, plus A records for the apex if `curtainsup.ie` should redirect).
+2. `src/CNAME` sets the custom domain to `curtainsup.ie`; GitHub redirects `www.curtainsup.ie` to it. In DNS, add four A records for the apex (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and a CNAME `www` pointing to `shmoigal.github.io`.
 
 ## Not migrated
 

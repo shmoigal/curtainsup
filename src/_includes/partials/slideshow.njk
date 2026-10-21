@@ -1,5 +1,5 @@
 <div class="slideshow" data-slideshow aria-label="Photo slideshow">
   {% for file in slideshow %}
-  <img src="/assets/images/slideshow/{{ file }}" width="700" height="300" alt=""{% if not loop.first %} loading="lazy" hidden{% endif %}>
+  <img src="{{ ('/assets/images/slideshow/' + file) | url }}" width="700" height="300" alt=""{% if not loop.first %} loading="lazy" hidden{% endif %}>
   {% endfor %}
 </div>

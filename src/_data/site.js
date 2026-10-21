@@ -1,6 +1,6 @@
 export default {
   name: "Curtain's Up Drama School, Dublin",
-  url: "https://www.curtainsup.ie",
+  url: "https://curtainsup.ie",
   year: new Date().getFullYear(),
   phone: "+353873645125",
   email: "info@curtainsup.ie",

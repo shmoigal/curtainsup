@@ -1,9 +1,9 @@
 ---
 title: Useful Links
 ---
-[Contact Us](/contact/) – Any questions? Please get in touch!
+[Contact Us]({{ '/contact/' | url }}) – Any questions? Please get in touch!
 
-[Our School Year Calendar](/calendar/)
+[Our School Year Calendar]({{ '/calendar/' | url }})
 
 #### Some other sites you may find useful:
 

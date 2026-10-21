@@ -5,13 +5,13 @@
   {% endif %}{% endfor %}
 
   <ul class="contact-row">
-    <li><img src="/assets/images/icons/phone.png" width="30" height="30" alt="Phone Us!"> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
-    <li><a href="mailto:{{ site.email }}"><img src="/assets/images/icons/email.png" width="30" height="30" alt="Email Us!"> {{ site.email }}</a></li>
+    <li><img src="{{ '/assets/images/icons/phone.png' | url }}" width="30" height="30" alt="Phone Us!"> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+    <li><a href="mailto:{{ site.email }}"><img src="{{ '/assets/images/icons/email.png' | url }}" width="30" height="30" alt="Email Us!"> {{ site.email }}</a></li>
   </ul>
   <ul class="contact-row">
-    <li><a href="{{ site.whatsapp }}"><img src="/assets/images/icons/whatsapp.png" width="30" height="30" alt="Chat on WhatsApp!"> {{ site.phone }}</a></li>
-    <li><a href="{{ site.facebook.url }}"><img src="/assets/images/icons/facebook.png" width="30" height="30" alt="Follow Us on Facebook!"> {{ site.facebook.label }}</a></li>
-    <li><a href="{{ site.instagram.url }}"><img src="/assets/images/icons/instagram.png" width="30" height="30" alt="Follow Us on Instagram!"> {{ site.instagram.label }}</a></li>
+    <li><a href="{{ site.whatsapp }}"><img src="{{ '/assets/images/icons/whatsapp.png' | url }}" width="30" height="30" alt="Chat on WhatsApp!"> {{ site.phone }}</a></li>
+    <li><a href="{{ site.facebook.url }}"><img src="{{ '/assets/images/icons/facebook.png' | url }}" width="30" height="30" alt="Follow Us on Facebook!"> {{ site.facebook.label }}</a></li>
+    <li><a href="{{ site.instagram.url }}"><img src="{{ '/assets/images/icons/instagram.png' | url }}" width="30" height="30" alt="Follow Us on Instagram!"> {{ site.instagram.label }}</a></li>
   </ul>
 
   <div class="footer-keywords">

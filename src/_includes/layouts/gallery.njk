@@ -5,8 +5,8 @@ layout: layouts/page.njk
 <ul class="gallery">
   {% for image in galleries[gallery] %}
   <li>
-    <a href="/assets/images/{{ gallery }}/{{ image.file }}">
-      <img src="/assets/images/{{ gallery }}/{{ image.file }}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy">
+    <a href="{{ ('/assets/images/' + gallery + '/' + image.file) | url }}">
+      <img src="{{ ('/assets/images/' + gallery + '/' + image.file) | url }}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy">
     </a>
   </li>
   {% endfor %}

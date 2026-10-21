@@ -1,7 +1,7 @@
 ---
 title: Sarah-Jayne Quigley
 ---
-<img class="align-right" src="/assets/images/sarah-jayne-quigley.jpg" width="150" height="225" alt="Sarah-Jayne Quigley">
+<img class="align-right" src="{{ '/assets/images/sarah-jayne-quigley.jpg' | url }}" width="150" height="225" alt="Sarah-Jayne Quigley">
 
 Sarah-Jayne holds a BA hons degree in Drama and Sociology from Trinity College Dublin and a BA hons in Acting from the London Academy of Music and Dramatic Art, as well as a Licentiate Diploma from the Irish Board of Speech and Drama.
 

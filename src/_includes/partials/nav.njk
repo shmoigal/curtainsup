@@ -9,8 +9,10 @@
 </ul>
 {% endmacro %}
 <nav class="main-nav" aria-label="Top Menu">
-  <button class="menu-toggle" type="button" aria-controls="top-menu" aria-expanded="false">Menu</button>
-  <div id="top-menu" class="menu">
-    {{ items(navigation, page.url) }}
+  <div class="wrap">
+    <button class="menu-toggle" type="button" aria-controls="top-menu" aria-expanded="false">Menu</button>
+    <div id="top-menu" class="menu">
+      {{ items(navigation, page.url) }}
+    </div>
   </div>
 </nav>

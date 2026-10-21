@@ -2,6 +2,7 @@ export default {
   name: "Curtain's Up Drama School, Dublin",
   url: "https://curtainsup.ie",
   year: new Date().getFullYear(),
+  footerLocation: "Monday, Tuesday & Wednesday: <strong>Knocklyon Community Centre</strong>, Idrone Avenue, Dublin 16",
   phone: "+353873645125",
   email: "info@curtainsup.ie",
   whatsapp: "https://wa.me/353873645125",

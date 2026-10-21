@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 ---
 {{ content | safe }}
-<ul class="gallery">
+<ul class="gallery cols-{{ columns or 3 }}">
   {% for image in galleries[gallery] %}
   <li>
     <a href="{{ ('/assets/images/' + gallery + '/' + image.file) | url }}">

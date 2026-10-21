@@ -1,22 +1,24 @@
 <footer class="site-footer">
-  <p>© Curtain's Up Drama School {{ site.year }}</p>
-  {% for venue in venues %}{% if venue.location %}
-  <p class="footer-venue">{{ venue.location.heading }}: <strong>{{ venue.location.address }}</strong></p>
-  {% endif %}{% endfor %}
+  <div class="wrap">
+    <div class="site-info">
+      <p>© Curtain's Up Drama School {{ site.year }}</p>
+      <p>{{ site.footerLocation | safe }}</p>
 
-  <ul class="contact-row">
-    <li><img src="{{ '/assets/images/icons/phone.png' | url }}" width="30" height="30" alt="Phone Us!"> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
-    <li><a href="mailto:{{ site.email }}"><img src="{{ '/assets/images/icons/email.png' | url }}" width="30" height="30" alt="Email Us!"> {{ site.email }}</a></li>
-  </ul>
-  <ul class="contact-row">
-    <li><a href="{{ site.whatsapp }}"><img src="{{ '/assets/images/icons/whatsapp.png' | url }}" width="30" height="30" alt="Chat on WhatsApp!"> {{ site.phone }}</a></li>
-    <li><a href="{{ site.facebook.url }}"><img src="{{ '/assets/images/icons/facebook.png' | url }}" width="30" height="30" alt="Follow Us on Facebook!"> {{ site.facebook.label }}</a></li>
-    <li><a href="{{ site.instagram.url }}"><img src="{{ '/assets/images/icons/instagram.png' | url }}" width="30" height="30" alt="Follow Us on Instagram!"> {{ site.instagram.label }}</a></li>
-  </ul>
+      <div class="row">
+        <div><img src="{{ '/assets/images/icons/phone.png' | url }}" width="30" height="30" alt="Phone Us!"> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></div>
+        <div><a href="mailto:{{ site.email }}"><img src="{{ '/assets/images/icons/email.png' | url }}" width="30" height="30" alt="Email Us!"> {{ site.email }}</a></div>
+      </div>
+      <div class="row">
+        <div><a href="{{ site.whatsapp }}"><img src="{{ '/assets/images/icons/whatsapp.png' | url }}" width="30" height="30" alt="Chat on WhatsApp!"> {{ site.phone }}</a></div>
+        <div><a href="{{ site.facebook.url }}"><img src="{{ '/assets/images/icons/facebook.png' | url }}" width="30" height="30" alt="Follow Us on Facebook!"> {{ site.facebook.label }}</a></div>
+        <div><a href="{{ site.instagram.url }}"><img src="{{ '/assets/images/icons/instagram.png' | url }}" width="30" height="30" alt="Follow Us on Instagram!"> {{ site.instagram.label }}</a></div>
+      </div>
 
-  <div class="footer-keywords">
-    {% for column in site.footerKeywords %}
-    <div>{% for line in column %}{{ line }}<br>{% endfor %}</div>
-    {% endfor %}
+      <div class="row keywords">
+        {% for column in site.footerKeywords %}
+        <div>{% for line in column %}{{ line }}<br>{% endfor %}</div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </footer>

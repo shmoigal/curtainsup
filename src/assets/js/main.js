@@ -12,13 +12,37 @@ document.addEventListener("DOMContentLoaded", () => {
   if (slideshow) {
     const slides = [...slideshow.querySelectorAll("img")];
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (slides.length > 1 && !reduceMotion) {
+    if (slides.length > 1) {
       let current = 0;
-      setInterval(() => {
+      const dots = document.createElement("ul");
+      dots.className = "slideshow-dots";
+      const buttons = slides.map((_, i) => {
+        const li = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+        button.setAttribute("aria-label", `Show slide ${i + 1}`);
+        button.addEventListener("click", () => { show(i); restart(); });
+        li.append(button);
+        dots.append(li);
+        return button;
+      });
+      slideshow.append(dots);
+
+      const show = (index) => {
         slides[current].hidden = true;
-        current = (current + 1) % slides.length;
+        buttons[current].removeAttribute("aria-current");
+        current = index;
         slides[current].hidden = false;
-      }, 5000);
+        buttons[current].setAttribute("aria-current", "true");
+      };
+      show(0);
+
+      let timer;
+      const restart = () => {
+        clearInterval(timer);
+        if (!reduceMotion) timer = setInterval(() => show((current + 1) % slides.length), 5000);
+      };
+      restart();
     }
   }
 });

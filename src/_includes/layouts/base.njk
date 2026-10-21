@@ -8,15 +8,18 @@
   <link rel="icon" href="{{ '/assets/images/favicon.png' | url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  <script>document.documentElement.classList.add("js")</script>
   <script src="{{ '/assets/js/main.js' | url }}" defer></script>
 </head>
-<body>
+<body{% if isHome %} class="home"{% endif %}>
   <a class="skip-link" href="#content">Skip to content</a>
   {% include "partials/header.njk" %}
-  <main id="content">
-    {{ content | safe }}
+  <main id="content" class="site-content">
+    <div class="wrap">
+      {{ content | safe }}
+    </div>
   </main>
   {% include "partials/footer.njk" %}
 </body>
